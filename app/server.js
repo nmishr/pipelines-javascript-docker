@@ -47,7 +47,7 @@ app.get('/', async function(req, res) {
 
   items.forEach( item => {results.push( `${item.id} - ${item.description}`)}  )
      
-  res.send(`<html><body><b>Hello World:</b><hr><ul><li> ${results.join("</li>\n<li>")} </li></ul></body></html>`);
+  res.send(`<html><body><b>Hello World</b> : <hr><ul><li> ${results.join("</li>\n<li>")} </li></ul></body></html>`);
   telemClient.trackEvent({ name: "CustomMessage 1", properties: { foo: "Bar" } });
   telemClient.flush();
 });
