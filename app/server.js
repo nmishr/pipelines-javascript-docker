@@ -30,7 +30,7 @@ const cosmosClient = new CosmosClient({ endpoint, key });
 const database = cosmosClient.database(databaseId);
 const container = database.container(containerId);
 
-const PORT = 8081;
+const PORT = 8080;
 const HOST = '0.0.0.0';
 
 
