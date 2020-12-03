@@ -9,7 +9,7 @@ trigger:
   paths:
     include:
     - app2/*
-    
+
 resources:
 - repo: self
 
@@ -61,7 +61,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'nmishrpipelinesjavascriptdocker.default'
+    environment: 'nmishrpipelinesjavascriptdocker2.default'
     strategy:
       runOnce:
         deploy:
@@ -91,7 +91,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
       
-    environment: 'nmishrpipelinesjavascriptdocker.$(k8sNamespaceForPR)'
+    environment: 'nmishrpipelinesjavascriptdocker2.$(k8sNamespaceForPR)'
     strategy:
       runOnce:
         deploy:
